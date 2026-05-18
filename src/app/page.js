@@ -4,9 +4,9 @@ import { useState } from 'react';
 
 export default function Home() {
   const certificates = {
-    'APMG-INT-2026-001': {
+    'APMG-INT-2026-021': {
       name: 'Mayank Jain',
-      certificateNo: 'APMG-INT-2026-001',
+      certificateNo: 'APMG-INT-2026-021',
       issueDate: '14/04/2026',
       validTill: '14/04/2029',
       status: 'Verified',
@@ -15,7 +15,16 @@ export default function Home() {
       photo: '/intern-photo.jpg',
     },
   };
-
+'APMG-INT-2026-019': {
+  name: 'Mehal Jain',
+  certificateNo: 'APMG-INT-2026-019',
+  issueDate: '13/04/2026',
+  validTill: '13/04/2029',
+  status: 'Verified',
+  course: 'Internship Completion Certificate',
+  hours: '120 Hours',
+  photo: '/rahul.jpg',
+},
   const [certificateInput, setCertificateInput] = useState('');
   const [verifiedData, setVerifiedData] = useState(null);
 
@@ -160,4 +169,3 @@ export default function Home() {
       )}
     </div>
   );
-}
