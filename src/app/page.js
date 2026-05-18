@@ -3,29 +3,31 @@
 import { useState } from 'react';
 
 export default function Home() {
-  const certificates = {
-    'APMG-INT-2026-021': {
-      name: 'Mayank Jain',
-      certificateNo: 'APMG-INT-2026-021',
-      issueDate: '14/04/2026',
-      validTill: '14/04/2029',
-      status: 'Verified',
-      course: 'Internship Completion Certificate',
-      hours: '120 Hours',
-      photo: '/intern-photo.jpg',
-    },
+ const certificates = {
+  'APMG-INT-2026-021': {
+    name: 'Mayank Jain',
+    certificateNo: 'APMG-INT-2026-021',
+    issueDate: '14/04/2026',
+    validTill: '14/04/2029',
+    status: 'Verified',
+    course: 'Internship Completion Certificate',
+    hours: '120 Hours',
+    photo: '/intern-photo.jpg',
+    certificateFile: '/mayank-certificate.jpg',
+  },
 
-    'APMG-INT-2026-019': {
-      name: 'Mehal Jain',
-      certificateNo: 'APMG-INT-2026-019',
-      issueDate: '13/04/2026',
-      validTill: '13/04/2029',
-      status: 'Verified',
-      course: 'Internship Completion Certificate',
-      hours: '120 Hours',
-      photo: '/rahul.jpg',
-    },
-  };
+  'APMG-INT-2026-019': {
+    name: 'Mehal Jain',
+    certificateNo: 'APMG-INT-2026-019',
+    issueDate: '13/04/2026',
+    validTill: '13/04/2029',
+    status: 'Verified',
+    course: 'Internship Completion Certificate',
+    hours: '120 Hours',
+    photo: '/rahul.jpg',
+    certificateFile: '/mehal-certificate.jpg',
+  },
+};
   const [certificateInput, setCertificateInput] = useState('');
   const [verifiedData, setVerifiedData] = useState(null);
 
@@ -145,7 +147,7 @@ export default function Home() {
                 </div>
 
                 <a
-                  href="/certificate-template.jpg"
+                  href={verifiedData.certificateFile}
                   download
                   className="bg-sky-600 hover:bg-sky-700 text-white text-center px-6 py-4 rounded-2xl font-semibold md:col-span-2"
                 >
