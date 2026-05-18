@@ -14,17 +14,18 @@ export default function Home() {
       hours: '120 Hours',
       photo: '/intern-photo.jpg',
     },
-  };
-'APMG-INT-2026-019': {
-  name: 'Mehal Jain',
-  certificateNo: 'APMG-INT-2026-019',
-  issueDate: '13/04/2026',
-  validTill: '13/04/2029',
-  status: 'Verified',
-  course: 'Internship Completion Certificate',
-  hours: '120 Hours',
-  photo: '/rahul.jpg',
-},
+
+    'APMG-INT-2026-019': {
+      name: 'Mehal Jain',
+      certificateNo: 'APMG-INT-2026-019',
+      issueDate: '13/04/2026',
+      validTill: '13/04/2029',
+      status: 'Verified',
+      course: 'Internship Completion Certificate',
+      hours: '120 Hours',
+      photo: '/rahul.jpg',
+    },
+  }:
   const [certificateInput, setCertificateInput] = useState('');
   const [verifiedData, setVerifiedData] = useState(null);
 
