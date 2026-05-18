@@ -25,7 +25,7 @@ export default function Home() {
       hours: '120 Hours',
       photo: '/rahul.jpg',
     },
-  }:
+  };
   const [certificateInput, setCertificateInput] = useState('');
   const [verifiedData, setVerifiedData] = useState(null);
 
